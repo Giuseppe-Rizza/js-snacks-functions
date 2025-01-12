@@ -5,9 +5,27 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
+function greetName(string) {
+
+    return "Hi " + string;
+    
+}
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
+greetName (userName);
+
+console.log(greetName(userName));
 
 
-//Risultato atteso se si passa 'Mario': // ciao Mario
+// Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+
+
+// VERSIONE ARROW
+
+const greetNameTwo = string => "Hi " + string;
+
+console.log(greetNameTwo(userName));
