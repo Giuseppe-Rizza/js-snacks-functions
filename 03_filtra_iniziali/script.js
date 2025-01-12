@@ -3,11 +3,44 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
-// Dichiara la funzione qui.
+// Scegli la lettera impostando una variabile
+
+const letter = "L";
+
+
+// Dichiara la funzione qui
+
+function changeArray(namesInArray, chosenLetter) {
+
+
+    // Crea nuovo array
+
+    const newNames = [];
+
+
+    // Inserisci ciclo for
+
+    for (let i = 0; i < namesInArray.length; i++) {
+
+        let element = namesInArray[i];
+        
+        if (element.charAt(0) === chosenLetter) {
+
+            newNames.push(element)
+            
+        }
+    }
+
+    return newNames;
+    
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
+changeArray(names, letter)
+
+console.log(changeArray(names, letter));
 
 
-//Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+// Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
